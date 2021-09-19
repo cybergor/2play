@@ -1,4 +1,4 @@
-package com.flutterflow.2play
+package com.flutterflow.toplay
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragmentActivity

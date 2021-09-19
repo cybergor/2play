@@ -1,4 +1,3 @@
-import '../flutter_flow/flutter_flow_google_map.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -19,7 +18,6 @@ class _MatchPageWidgetState extends State<MatchPageWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: FlutterFlowTheme.tertiaryColor,
         automaticallyImplyLeading: false,
@@ -29,7 +27,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget> {
           },
           child: Icon(
             Icons.chevron_left_rounded,
-            color: FlutterFlowTheme.primaryColor,
+            color: Color(0xFF4B39EF),
             size: 32,
           ),
         ),
@@ -91,7 +89,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget> {
                       '10:00am',
                       style: FlutterFlowTheme.subtitle2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.primaryColor,
+                        color: Color(0xFF4B39EF),
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
@@ -129,7 +127,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget> {
                       '30m | High Intensity | Indoor/Outdoor',
                       style: FlutterFlowTheme.bodyText2.override(
                         fontFamily: 'Lexend Deca',
-                        color: FlutterFlowTheme.primaryColor,
+                        color: Color(0xFF4B39EF),
                         fontSize: 14,
                         fontWeight: FontWeight.normal,
                       ),
@@ -148,21 +146,6 @@ class _MatchPageWidgetState extends State<MatchPageWidget> {
                     height: 250,
                     decoration: BoxDecoration(
                       color: Color(0xFFEEEEEE),
-                    ),
-                    child: FlutterFlowGoogleMap(
-                      initialLocation: LatLng(13.106061, -59.613158),
-                      markerColor: GoogleMarkerColor.violet,
-                      mapType: MapType.normal,
-                      style: GoogleMapStyle.standard,
-                      initialZoom: 14,
-                      allowInteraction: true,
-                      allowZoom: true,
-                      showZoomControls: true,
-                      showLocation: true,
-                      showCompass: false,
-                      showMapToolbar: false,
-                      showTraffic: false,
-                      centerMapOnMarkerTap: true,
                     ),
                   ),
                 )

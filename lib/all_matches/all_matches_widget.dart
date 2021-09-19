@@ -54,7 +54,22 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
             fontWeight: FontWeight.bold,
           ),
         ),
-        actions: [],
+        actions: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
+            child: IconButton(
+              onPressed: () {
+                print('IconButton pressed ...');
+              },
+              icon: Icon(
+                Icons.filter_list,
+                color: Color(0xFF4B39EF),
+                size: 24,
+              ),
+              iconSize: 24,
+            ),
+          )
+        ],
         centerTitle: false,
         elevation: 2,
       ),
@@ -162,7 +177,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.primaryColor,
+                            color: Color(0xFF4B39EF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
@@ -173,7 +188,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                 width: 48,
                                 height: 48,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Color(0xFF4B39EF),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Icon(
@@ -212,7 +227,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.primaryColor,
+                            color: Color(0xFF4B39EF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
@@ -223,7 +238,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                 width: 48,
                                 height: 48,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Color(0xFF4B39EF),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Icon(
@@ -262,7 +277,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.primaryColor,
+                            color: Color(0xFF4B39EF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
@@ -273,7 +288,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                 width: 48,
                                 height: 48,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Color(0xFF4B39EF),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Icon(
@@ -312,7 +327,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.primaryColor,
+                            color: Color(0xFF4B39EF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
@@ -323,7 +338,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                 width: 48,
                                 height: 48,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Color(0xFF4B39EF),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Icon(
@@ -362,7 +377,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.primaryColor,
+                            color: Color(0xFF4B39EF),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
@@ -373,7 +388,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                 width: 48,
                                 height: 48,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Color(0xFF4B39EF),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Icon(
@@ -389,7 +404,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                   'Running',
                                   style: FlutterFlowTheme.bodyText2.override(
                                     fontFamily: 'Lexend Deca',
-                                    color: Color(0xFF8B97A2),
+                                    color: FlutterFlowTheme.tertiaryColor,
                                     fontSize: 14,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -501,8 +516,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                               style: FlutterFlowTheme.bodyText1
                                                   .override(
                                                 fontFamily: 'Lexend Deca',
-                                                color: FlutterFlowTheme
-                                                    .primaryColor,
+                                                color: Color(0xFF4B39EF),
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -527,8 +541,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                             options: FFButtonOptions(
                                               width: 120,
                                               height: 40,
-                                              color:
-                                                  FlutterFlowTheme.primaryColor,
+                                              color: Color(0xFF4B39EF),
                                               textStyle: GoogleFonts.getFont(
                                                 'Lexend Deca',
                                                 color: Colors.white,
@@ -563,8 +576,8 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                         color: Color(0xFF090F13),
                         image: DecorationImage(
                           fit: BoxFit.fitWidth,
-                          image: Image.asset(
-                            'assets/images/john-arano-h4i9G-de7Po-unsplash.jpg',
+                          image: Image.network(
+                            'https://w0.peakpx.com/wallpaper/836/940/HD-wallpaper-novak-djokovic-nole-atp-serbian-tennis.jpg',
                           ).image,
                         ),
                         boxShadow: [
@@ -621,8 +634,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                             style: FlutterFlowTheme.bodyText1
                                                 .override(
                                               fontFamily: 'Lexend Deca',
-                                              color:
-                                                  FlutterFlowTheme.primaryColor,
+                                              color: Color(0xFF4B39EF),
                                               fontSize: 14,
                                               fontWeight: FontWeight.normal,
                                             ),
@@ -646,8 +658,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                           options: FFButtonOptions(
                                             width: 120,
                                             height: 40,
-                                            color:
-                                                FlutterFlowTheme.primaryColor,
+                                            color: Color(0xFF4B39EF),
                                             textStyle: GoogleFonts.getFont(
                                               'Lexend Deca',
                                               color: Colors.white,
@@ -681,8 +692,8 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                         color: Color(0xFF090F13),
                         image: DecorationImage(
                           fit: BoxFit.fitWidth,
-                          image: Image.asset(
-                            'assets/images/john-arano-h4i9G-de7Po-unsplash.jpg',
+                          image: Image.network(
+                            'https://i.pinimg.com/originals/a9/88/a4/a988a47e605cacc02b0bb41c85270de3.jpg',
                           ).image,
                         ),
                         boxShadow: [
@@ -700,7 +711,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                           width: 100,
                           height: 100,
                           decoration: BoxDecoration(
-                            color: Color(0xFF090F13),
+                            color: FlutterFlowTheme.tertiaryColor,
                             borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(8),
                               bottomRight: Radius.circular(8),
@@ -729,7 +740,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                             style: FlutterFlowTheme.title2
                                                 .override(
                                               fontFamily: 'Lexend Deca',
-                                              color: Colors.white,
+                                              color: Color(0xFF36393C),
                                               fontSize: 22,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -739,7 +750,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                             style: FlutterFlowTheme.bodyText1
                                                 .override(
                                               fontFamily: 'Lexend Deca',
-                                              color: Color(0xFF39D2C0),
+                                              color: Color(0xFF4B39EF),
                                               fontSize: 14,
                                               fontWeight: FontWeight.normal,
                                             ),
@@ -763,7 +774,7 @@ class _AllMatchesWidgetState extends State<AllMatchesWidget>
                                           options: FFButtonOptions(
                                             width: 120,
                                             height: 40,
-                                            color: Color(0xFF39D2C0),
+                                            color: Color(0xFF4B39EF),
                                             textStyle: GoogleFonts.getFont(
                                               'Lexend Deca',
                                               color: Colors.white,

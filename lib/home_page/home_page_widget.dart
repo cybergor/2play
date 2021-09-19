@@ -27,7 +27,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           },
           icon: Icon(
             Icons.menu,
-            color: FlutterFlowTheme.primaryColor,
+            color: Color(0xFF4B39EF),
             size: 30,
           ),
           iconSize: 30,
@@ -41,7 +41,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               },
               icon: Icon(
                 Icons.notifications_rounded,
-                color: FlutterFlowTheme.primaryColor,
+                color: Color(0xFF4B39EF),
                 size: 26,
               ),
               iconSize: 26,

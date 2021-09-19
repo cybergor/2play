@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:2_play/home_page/home_page_widget.dart';
+import 'package:toplay/home_page/home_page_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'home_page/home_page_widget.dart';
 import 'all_matches/all_matches_widget.dart';
-import 'flutter_flow/flutter_flow_theme.dart';
+import 'create_match/create_match_widget.dart';
+import 'profile/profile_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '2Play',
+      title: 'toplay',
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -53,6 +54,8 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': HomePageWidget(),
       'AllMatches': AllMatchesWidget(),
+      'CreateMatch': CreateMatchWidget(),
+      'Profile': ProfileWidget(),
     };
     return Scaffold(
       body: tabs[_currentPage],
@@ -71,11 +74,25 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24,
             ),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.plus,
+              size: 24,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_sharp,
+              size: 28,
+            ),
+            label: 'Home',
           )
         ],
         backgroundColor: Colors.white,
         currentIndex: tabs.keys.toList().indexOf(_currentPage),
-        selectedItemColor: FlutterFlowTheme.primaryColor,
+        selectedItemColor: Color(0xFF4B39EF),
         unselectedItemColor: Color(0x8A000000),
         onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
         showSelectedLabels: true,
